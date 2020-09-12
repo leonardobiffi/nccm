@@ -4,9 +4,7 @@ NCurses ssh Connection Manager (nccm)
 
 ![](images/program_screenshot.png)
 
-Copyright (C) 2020 Kenneth Aaron.
-
-flyingrhino AT orcon DOT net DOT nz
+Copyright (C) 2020 Leonardo Biffi.
 
 Freedom makes a better world: released under GNU GPLv3.
 
@@ -36,8 +34,8 @@ This is the easiest way to install nccm, you can of course
 install and use nccm in any way you wish.
 
 * Clone the project from the git repository:
-  `git clone https://github.com/flyingrhinonz/nccm nccm.git`
-* `cd nccm.git/nccm/`
+  `git clone https://github.com/leonardobiffi/nccm.git`
+* `cd nccm/nccm/`
 * `sudo install -m 755 nccm -t /usr/local/bin/`
 
 

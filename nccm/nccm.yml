@@ -10,6 +10,7 @@
 #   FRIENDLY_NAME:
 #     user: USER_NAME
 #     address: SERVER_ADDRESS
+#     pem: PEM_PATH
 #     comment: FREETEXT_COMMENT
 #
 #   Details:
@@ -24,7 +25,6 @@
 #   user@example2.com:
 #
 # In this case user name and address will be extracted from friendly name automatically.
-
 
 # nccm internal configs:
 
@@ -45,6 +45,7 @@ border router:                # Comments are allowed here
   comment: My border router   # And here
   address: 192.168.1.1        # And everywhere else
   user: admin                 # Settings order is not important
+  pem: /home/myuser/server.pem
 test server:
   address: test.example.com
   user: root

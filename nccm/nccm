@@ -443,6 +443,8 @@ class Connections:
                 Address = self.LoadedServersDict[Item].get('address', False)
                 if not Address:
                     Address = self.LoadedServersDict[Item].get('address', Item.split(sep='@')[1])
+                
+                Pem = self.LoadedServersDict[Item].get('pem', '')
 
                 Comment = self.LoadedServersDict[Item].get('comment', '')
                     # ^ .get because item my be empty
@@ -451,7 +453,7 @@ class Connections:
                 #    'Address = {} , Comment = {}'
                 #        .format(Counter, Item, UserName, Address, Comment))
                 self.FullServersList.append([
-                    Counter, Item, '{}@{}'.format(UserName, Address), Comment])
+                    Counter, Item, '{}@{} -i {}'.format(UserName, Address, Pem), Comment])
             # ^ Now we have a list of lists:
             #  [[Serial # , FriendlyName , ConnString , Comment] , [...]]
             #LogWrite.debug('self.FullServersList = {}'.format(self.FullServersList))
